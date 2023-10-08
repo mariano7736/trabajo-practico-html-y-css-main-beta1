@@ -26,23 +26,61 @@ body {
 /* Header/logo Title */
 .header {
     grid-area: header;
+    background-color: #333;
+    display: grid;
+    place-items: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    margin: 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 100%;
+    background-color: white;
+    grid-area: main;
 }
 
 .banner{
-   
- 
     height: 800px;
-    
+    display: grid;
+    place-items: center;
 }
 
 .slider-frame {
-    background-size: cover; /* Ajusta el tamaño para cubrir todo el fondo */
-    background-position: center; /* Ajusta la posición al centro */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    padding-top: 0px;
-	width: 1920px;
+    
+	width: 100%;
     height: 800px;
-	overflow: hidden;
+	overflow:hidden;
 }
 
 .slider-frame ul {
@@ -60,6 +98,13 @@ body {
 
 .slider-frame img {
 	width: 100%;
+}
+
+
+.slider-img {
+	
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 @keyframes slide {
@@ -86,52 +131,6 @@ body {
     border-radius: 100%;
     margin: 10px 0 8px 10px;}
 /* Style the top navigation bar */
-.navbar {
-    display: flex;
-    background-color: #333;
-    justify-content: space-between;
-
-  
-}
-
-.menu {
-    display: flex;
-}
-/* Style the navigation bar links */
-.menu a {
-    font-family: Arial, Helvetica, sans-serif ;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    place-items: center;
-    margin: 20px;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Column container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-
-
-/* Main column */
-.main {
-    width: 100%;
-    flex: 50%;
-    background-color: white;
-    grid-area: main;
-}
 
 /* Footer */
 .footer {
@@ -175,13 +174,65 @@ small {
     padding: 10px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 1000px) {
-    .row,
-    .navbar {
-        flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
-    }
-    
+
+.menu a{
+    margin: 15px;
+    color: white;
+    position: relative;
+    text-decoration: none;
 }
-
-
+.menu a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 151, 5);
+    transition: all 0.5s;
+}
+.menu a:hover::before{
+    width: 100% !important;
+}
+.nav_toggle{
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: orange;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+    .menu a{ text-align: center;}
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;                
+        margin: 15px;
+    }
+    .nav_toggle span{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;             
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .close span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .close span:nth-child(2){
+        display: none;
+    }
+    .close span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+    .open{ transform: translateX(0) !important}
+}

@@ -4,7 +4,8 @@
 <head>
     <title>Mariano</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="media-query-flex-responsive.css">
 </head>
 
@@ -17,24 +18,35 @@
                 <div class="icono">
                     <a href="#"><img src="logo.jpg" class="logo"></a>
                 </div>
-                <div class="menu">
+                <div class="menu" id="items_menu">
                     <a href="#">INICIO</a>
                     <a href="#">PRODUCTOS</a>
                     <a href="#">ACERCA DE MI</a>
                     <a href="#">CONTACTO</a>
                 </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
+        <script>
+            _toggle.onclick = () =>{
+                items_menu.classList.toggle("open")
+                _toggle.classList.toggle("close")
+            }
+        </script>
 
         <div class="main">
             <div class="banner">
                 <div class="slider-frame">
                     <ul>
-                        <li><img src="/trabajo-practico-html-y-css-main/img/slider1.png" alt=""></li>
-                        <li><img src="/trabajo-practico-html-y-css-main/img/slider2.png" alt=""></li>
-                        <li><img src="/trabajo-practico-html-y-css-main/img/slider3.png" alt=""></li>
-                        <li><img src="/trabajo-practico-html-y-css-main/img/slider4.PNG" alt=""></li>
-                        <li><img src="/trabajo-practico-html-y-css-main/img/slider5.PNG" alt=""></li>
+                        <li><img src="/trabajo-practico-html-y-css-main/img/slider1.PNG" class="slider-img" alt=""></li>
+                        <li><img src="/trabajo-practico-html-y-css-main/img/slider2.PNG" class="slider-img" alt=""></li>
+                        <li><img src="/trabajo-practico-html-y-css-main/img/slider3.PNG" class="slider-img" alt=""></li>
+                        <li><img src="/trabajo-practico-html-y-css-main/img/slider4.PNG" class="slider-img" alt=""></li>
+                        <li><img src="/trabajo-practico-html-y-css-main/img/slider5.PNG" class="slider-img" alt=""></li>
                     </ul>
                 </div>
                  
