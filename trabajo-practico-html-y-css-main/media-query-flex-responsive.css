@@ -188,7 +188,7 @@ small {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: rgb(255, 151, 5);
+    background: rgb(0, 0, 0);
     transition: all 0.5s;
 }
 .menu a:hover::before{
@@ -200,15 +200,17 @@ small {
 @media (max-width: 768px) {
     .menu{
         position: absolute;
-        top: 60px;
-        left: 0;
-        background: orange;
+        top: 45px;
+        left: 50;
+        right: 0;
+        background:grey;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        column-rule-width:70% ;
         height: -webkit-fill-available;
-        transform: translateX(-100%);
+        transform: translatey(-125%);
         transition: 0.3s ease all;
+        bottom: 500px;
     }
     .menu a{ text-align: center;}
     .nav_toggle{
