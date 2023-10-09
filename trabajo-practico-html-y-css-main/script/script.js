@@ -1,23 +1,6 @@
-const file ='../data/productos.json';
-const containerProducts = document.getElementById('contenido');
-const modal = document.getElementById('ventana-modal');
-const modalForm = document.getElementById('ventana-form');
+const file = "./data/productos.json";
+const containerProducts = document.getElementById('container-products');
 const myNav = document.getElementById('myTopnav');
-const contenedorProductos = document.querySelector('.contenedor-carrito');
-
-
-let productosCarrito = [];
-
-class Producto {
-    constructor(imagen, nombre, precio, id) {
-        this.imagen = imagen;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.id = id;
-        this.cantidad = 1;
-        this.subtotal = 0;
-    }
-}
 
 cargarEventos();
 
@@ -26,8 +9,8 @@ function cargarEventos() {
     document.addEventListener('DOMContentLoaded', () => {
         renderizarProductos();
     });
-
 }
+
 
 
 async function realizarPeticion(datos) {
@@ -67,5 +50,3 @@ function mostrarMenu() {
     let navbar = document.getElementById('myTopnav');
     navbar.className = navbar.className === 'topnav' ? (navbar.className += ' responsive') : (navbar.className = 'topnav');
 }
-
-

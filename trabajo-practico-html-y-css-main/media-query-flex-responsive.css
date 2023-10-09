@@ -68,27 +68,32 @@ body {
     width: 100%;
     background-color: white;
     grid-area: main;
-}
-
-.banner{
-    height: 800px;
     display: grid;
     place-items: center;
 }
 
+.banner{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+
 .slider-frame {
-    
-	width: 100%;
-    height: 800px;
+    height: 100%;
+	width: 70%;
 	overflow:hidden;
 }
 
 .slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 500%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+    height: 100%;
+    margin: 0;
 }
 
 .slider-frame li {
@@ -102,9 +107,9 @@ body {
 
 
 .slider-img {
-	
-    aspect-ratio: 4/3;
     object-fit: cover;
+    background-position: center center;
+
 }
 
 @keyframes slide {
@@ -130,7 +135,6 @@ body {
     width: 80px;
     border-radius: 100%;
     margin: 10px 0 8px 10px;}
-/* Style the top navigation bar */
 
 /* Footer */
 .footer {
@@ -237,4 +241,64 @@ small {
         transform: rotate(-45deg) translate(-5px, 1px);
     }
     .open{ transform: translateX(0) !important}
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.container .card h4 {
+    font-weight: 600;
+    margin: 8px auto;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px auto;
+}
+
+.container .card .boton {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: #c79cc9;
+    padding: 10px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
 }
