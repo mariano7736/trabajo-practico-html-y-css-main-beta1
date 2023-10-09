@@ -71,29 +71,16 @@ body {
 }
 
 .banner{
-<<<<<<< Updated upstream
     height: 800px;
-=======
-    height: 500px;
->>>>>>> Stashed changes
     display: grid;
     place-items: center;
 }
 
 .slider-frame {
-<<<<<<< Updated upstream
     
 	width: 100%;
     height: 800px;
 	overflow:hidden;
-=======
-    background-size: cover; /* Ajusta el tamaño para cubrir todo el fondo */
-    background-position: center; /* Ajusta la posición al centro */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-	width: 80%;
-    height: 500px;
-	overflow: hidden;
->>>>>>> Stashed changes
 }
 
 .slider-frame ul {
