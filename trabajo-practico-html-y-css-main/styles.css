@@ -91,7 +91,7 @@ body {
     display: flex;
     padding: 0;
     width: 600%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 25s infinite alternate ease-in-out;
     height: 100%;
     margin: 0;
 }
@@ -113,24 +113,24 @@ body {
 }
 
 @keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+
+
+    0% {margin-left: 0;}
+	15% {margin-left: 0;}
 	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
+	20% {margin-left: -100%;}
+	35% {margin-left: -100%;}
 	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
+	40% {margin-left: -200%;}
+	55% {margin-left: -200%;}
 	
+	60% {margin-left: -300%;}
 	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
 
-    105% {margin-left: -400%;}
-	125% {margin-left: -400%;}
+    80% {margin-left: -400%;}
+	100% {margin-left: -400%;}
 
-    130% {margin-left: -500%;}
-	150% {margin-left: -500%;}
-
+ 
 
 
 
