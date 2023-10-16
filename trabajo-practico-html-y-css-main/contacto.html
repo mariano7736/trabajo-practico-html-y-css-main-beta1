@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mariano</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajo-practico-html-y-css-main/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./script/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="header">
+            <div class="navbar">
+                <div class="icono">
+                    <a href="#"><img src="logo.jpg" class="logo"></a>
+                </div>
+                <div class="menu" id="items_menu">
+                    <a href="/trabajo-practico-html-y-css-main/Index.html">INICIO</a>
+                    <a href="/trabajo-practico-html-y-css-main/productos.html">PRODUCTOS</a>
+                    <a href="#">ACERCA DE MI</a>
+                    <a href="#">CONTACTO</a>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <main>
+            <div class="Container-Contact">
+                <div class="content">
+                    <div class="left">
+                        <div class="details address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="topic">Ubicacion</div>
+                            <div class="text-one">Buenos Aires, Argentina</div>
+                            <div class="text-two">560</div>
+                        </div>
+                        <div class="details phone">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="topic">Telefono</div>
+                            <div class="text-one">+91537 2638 645</div>
+                            <div class="text-two">+91537 2638 645</div>
+                        </div>
+                        <div class="details email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="topic">Email</div>
+                            <div class="text-one">DiamondCakes@gmail.com</div>
+                            <div class="text-two">DiamondCakes@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="topic-text">CONTACTANOS</div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                            error! Cumque placeat nulla eligendi corrupti.
+                        </p>
+                        <form action="#">
+
+
+                            <div class="input-group">
+                                <label>Nombre Completo</label>
+                                <input type="text" placeholder="Ingrese Su Nombre" id="contact-name"
+                                    onkeyup="validateName()">
+                                <span id="name-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Telefono</label>
+                                <input type="tel" placeholder="123 456 7890" id="contact-phone"
+                                    onkeyup="validatePhone()">
+                                <span id="phone-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Email </label>
+                                <input type="email" placeholder="Ingrese Su Email" id="contact-email"
+                                    onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Su mensaje</label>
+                                <textarea rows="5" placeholder="Ingrese su Mensaje" id="contact-message"
+                                    onkeyup="validateMessage()"></textarea>
+                                <span id="message-error"></span>
+                            </div>
+
+                            <button onclick="return validateForm()">ENVIAR</button>
+                            <span id="submit-error"></span>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+
+<br><br><br>
+
+        <footer>
+            <div class="footer">
+                <div class="contenedor-footer">
+                    <div class="columna">
+                        <a href="#"><img src="logo.jpg" class="logo"></a>
+                    </div>
+                    <div class="columna">
+                        <menu>
+                            <h2>Cakes Diamond</h2>
+                            <ol>
+                                <p>About Us</p>
+                            </ol>
+                            <ol>
+                                <p>Contact</p>
+                            </ol>
+                            <ol>
+                                <span class='social-links'>
+                                    <a>
+                                        <img src="./instagram.png" class="social" title='Instagram' alt='Instagram' />
+                                    </a>
+                                    <a>
+                                        <img src="./facebook.png" class="social" title='Facebook' alt='Facebook' />
+                                    </a>
+
+                                </span>
+                            </ol>
+
+                        </menu>
+                    </div>
+
+                </div>
+                <div class="autor">
+                    <small>© - 2023 All rights reserved</small>
+                </div>
+            </div>
+    </div>
+    </footer>
+
+
+
+    <script>
+
+        _toggle.onclick = () => {
+            items_menu.classList.toggle("open"),
+                _toggle.classList.toggle("close")
+        }
+    </script>
+
+    <script src="/trabajo-practico-html-y-css-main/script/Validacion.js"></script>
+</body>
+
+</html>
