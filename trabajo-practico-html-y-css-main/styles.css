@@ -90,7 +90,7 @@ body {
 .slider-frame ul {
     display: flex;
     padding: 0;
-    width: 500%;
+    width: 600%;
     animation: slide 20s infinite alternate ease-in-out;
     height: 100%;
     margin: 0;
@@ -127,6 +127,12 @@ body {
 
     105% {margin-left: -400%;}
 	125% {margin-left: -400%;}
+
+    130% {margin-left: -500%;}
+	150% {margin-left: -500%;}
+
+
+
 
 
 }
