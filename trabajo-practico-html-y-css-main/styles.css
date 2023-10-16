@@ -73,7 +73,7 @@ body {
 }
 
 .banner{
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -103,6 +103,7 @@ body {
 
 .slider-frame img {
 	width: 100%;
+  
 }
 
 
@@ -247,9 +248,26 @@ small {
         transform: rotate(-45deg) translate(-5px, 1px);
     }
     .open{ transform: translateX(0) !important}
+
+    .slider-frame img {
+        width: 100%;
+        height: 100%;
+      
+    }
     
 }
 
+@media (max-width: 425px) {
+
+    .slider-frame img {
+        width: 90%;
+        height: 100%;
+      
+    }
+
+
+
+}
 .container {
     width: 100%;
     max-width: 1200px;
