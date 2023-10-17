@@ -1,4 +1,4 @@
-const file = "./data/productos.json";
+const file = "../data/productos.json";
 const containerProducts = document.getElementById('container-products');
 const myNav = document.getElementById('myTopnav');
 
@@ -37,7 +37,7 @@ function recorrerArray(arregloProductos) {
         const divCard = document.createElement('div');
         divCard.classList.add('card');
         divCard.innerHTML += `
-			<img src="./img/${producto.img}" alt="${producto.nombre}" />
+			<img src="../img/productos/${producto.img}" alt="${producto.nombre}" />
 			<h4>${producto.nombre}</h4>
 			<p>$${producto.precio}</p>
 			<a id=${producto.id} class="boton agregar-carrito" href="#">Agregar</a>

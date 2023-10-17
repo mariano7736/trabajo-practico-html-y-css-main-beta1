@@ -145,7 +145,7 @@ body {
     margin: 10px 0 8px 10px;}
 
 /* CONTACTO */
-.Container-Contact {
+.container-contact {
     width: 100%;
     background-color: #fff;
     border-radius: 6px;
@@ -153,13 +153,13 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
   
-.Container-Contact .content {
+.container-contact .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .Container-Contact .content .left {
+  .container-contact .content .left {
     width: 25%;
     height: 100%;
     display: flex;
@@ -170,7 +170,7 @@ body {
     position: relative;
   }
   
-  .Container-Contact .content .left::before {
+  .container-contact .content .left::before {
     content: "";
     position: absolute;
     height: 70%;
@@ -181,32 +181,32 @@ body {
     background-color: #afafb6;
   }
   
-  .Container-Contact .left .details {
+  .container-contact .left .details {
     margin: 14px;
     text-align: center;
   }
   
-  .Container-Contact .left .details i {
+  .container-contact .left .details i {
     font-size: 30px;
     color: #c79cc9;
     margin-bottom: 10px;
   }
-  .Container-Contact .left .details i:hover{
+  .container-contact .left .details i:hover{
     color: darkviolet;
   }
   
-  .Container-Contact .left .details .topic {
+  .container-contact .left .details .topic {
     font-size: 18px;
     font-weight: 500;
   }
   
-  .Container-Contact .left .details .text-one,
-  .Container-Contact .left .details .text-two {
+  .container-contact .left .details .text-one,
+  .container-contact .left .details .text-two {
     font-size: 14px;
     color: #afafb6;
   }
   
-  .Container-Contact .right {
+  .container-contact .right {
     width: 75%;
     margin-left: 75px;
   }
@@ -336,28 +336,28 @@ color: red;
     } 
 
   @media (max-width: 950px) {
-    .Container-Contact {
+    .container-contact {
       width: 100%;
       padding: 30px 35px 40px 35px;
     }
   
-    .Container-Contact .content .right {
+    .container-contact .content .right {
       width: 75%;
       margin-left: 55px;
     }
   }
   
   @media (max-width: 768px) {
-    .Container-Contact {
+    .container-contact {
       margin: 40px 0;
       height: 100%;
     }
   
-    .Container-Contact .content {
+    .container-contact .content {
       flex-direction: column-reverse;
     }
   
-    .Container-Contact .content .left {
+    .container-contact .content .left {
       width: 100%;
       flex-direction: row;
       margin-top: 40px;
@@ -365,11 +365,11 @@ color: red;
       flex-wrap: wrap;
     }
   
-    .Container-Contact.content .left::before {
+    .container-contact.content .left::before {
       display: none;
     }
   
-    .Container-Contact .content .right {
+    .container-contact .content .right {
       width: 100%;
       margin-left: 0;
     }
@@ -469,6 +469,7 @@ small {
         display: flex !important;
         flex-direction: column;                
         margin: 15px;
+        justify-content: center;
     }
     .nav_toggle span{
         width: 30px;
