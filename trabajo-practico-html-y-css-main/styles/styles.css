@@ -116,7 +116,6 @@ body {
 
 @keyframes slide {
 
-
     0% {margin-left: 0;}
 	15% {margin-left: 0;}
 	
@@ -131,11 +130,6 @@ body {
 
     80% {margin-left: -400%;}
 	100% {margin-left: -400%;}
-
- 
-
-
-
 
 }
 
@@ -416,8 +410,6 @@ color: red;
     border-radius: 100%;
 }
 
-
-
 .autor {
     margin: 20px;
 }
@@ -432,6 +424,7 @@ small {
     color: white;
     position: relative;
     text-decoration: none;
+
 }
 .menu a::before{
     content: "";
@@ -454,21 +447,16 @@ small {
         position: absolute;
         top: 45px;
         left: 50;
-        right: 0;
+        right: 20%;
         background:grey;
-        display: flex;
         flex-direction: column;
-        column-rule-width:70% ;
-        height: -webkit-fill-available;
         transform: translatey(-125%);
-        transition: 0.3s ease all;
-        bottom: 500px;
+        transition: 0s ease all;
     }
     .menu a{ text-align: center;}
     .nav_toggle{
         display: flex !important;
         flex-direction: column;                
-        margin: 15px;
         justify-content: center;
     }
     .nav_toggle span{
