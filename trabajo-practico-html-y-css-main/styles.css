@@ -103,6 +103,7 @@ body {
 
 .slider-frame img {
 	width: 100%;
+    height: 100%;
   
 }
 
@@ -321,7 +322,19 @@ color: red;
 .input-group span i{
     color: seagreen;
 }
-  
+
+    @media (min-width: 1024px){
+
+        
+
+        .banner{
+            
+            width: 70%;
+            object-fit: cover;
+            
+        }
+    } 
+
   @media (max-width: 950px) {
     .Container-Contact {
       width: 100%;
