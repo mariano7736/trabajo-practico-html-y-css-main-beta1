@@ -3,6 +3,8 @@
 
 <head>
     <title>Mariano</title>
+    <!-- agregamos fonts -->
+    <script src="https://kit.fontawesome.com/bc66c71a35.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +14,32 @@
 </head>
 
 <body>
+    <header>
+        <div class="contenedor">
 
-    <div class="contenedor">
-
-        <div class="header">
-            <div class="navbar">
-                <div class="icono">
-                    <a href="#"><img src="logo.jpg" class="logo"></a>
-                </div>
-                <div class="menu" id="items_menu">
-                    <a href="/trabajo-practico-html-y-css-main/Index.html">INICIO</a>
-                    <a href="/trabajo-practico-html-y-css-main/productos.html">PRODUCTOS</a>
-                    <a href="#">ACERCA DE MI</a>
-                    <a href="/trabajo-practico-html-y-css-main/contacto.html">CONTACTO</a>
-                </div>
-                <div class="nav_toggle" id="_toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="header">
+                <div class="navbar">
+                    <div class="icono">
+                        <a href="#"><img src="logo.jpg" class="logo"></a>
+                    </div>
+                    <div class="menu" id="items_menu">
+                        <a href="/trabajo-practico-html-y-css-main/Index.html">INICIO</a>
+                        <a href="/trabajo-practico-html-y-css-main/productos.html">PRODUCTOS</a>
+                        <a href="/trabajo-practico-html-y-css-main/acerca-de-mi.html">ACERCA DE MI</a>
+                        <a href="/trabajo-practico-html-y-css-main/contacto.html">CONTACTO</a>
+                    </div>
+                    <div class="nav_toggle" id="_toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
-        </div>
+    
 
+    </header>
 
+    <main>
         <div class="main">
             <div class="banner">
                 <div class="slider-frame">
@@ -50,10 +55,10 @@
                  
             </div>
 
-        
-
         </div>
-    
+
+    </main>
+    <footer>
         <div class="footer">
             <div class="contenedor-footer">
                 <div class="columna">
@@ -71,10 +76,10 @@
                         <ol>
                             <span class='social-links'>
                                 <a>
-                                    <img src="./instagram.png" class="social" title='Instagram' alt='Instagram' />                       
+                                    <a href="https://www.instagram.com/"title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>              
                                 </a>
                                 <a>
-                                    <img src="./facebook.png" class="social"  title='Facebook' alt='Facebook' />                       
+                                    <a href="https://www.facebook.com/"title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>                      
                                 </a>
             
                             </span>
@@ -97,6 +102,11 @@
             _toggle.classList.toggle("close")
         }
     </script>
+
+
+    </footer>
+
+   
 </body>
 
 </html>
