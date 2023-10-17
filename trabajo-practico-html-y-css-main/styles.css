@@ -143,6 +143,234 @@ body {
     border-radius: 100%;
     margin: 10px 0 8px 10px;}
 
+/* CONTACTO */
+.Container-Contact {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.Container-Contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .Container-Contact .content .left {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  
+  .Container-Contact .content .left::before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #afafb6;
+  }
+  
+  .Container-Contact .left .details {
+    margin: 14px;
+    text-align: center;
+  }
+  
+  .Container-Contact .left .details i {
+    font-size: 30px;
+    color: #c79cc9;
+    margin-bottom: 10px;
+  }
+  .Container-Contact .left .details i:hover{
+    color: darkviolet;
+  }
+  
+  .Container-Contact .left .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .Container-Contact .left .details .text-one,
+  .Container-Contact .left .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+  }
+  
+  .Container-Contact .right {
+    width: 75%;
+    margin-left: 75px;
+  }
+  
+  .content .right .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #c79cc9;
+  }
+  
+  .content .right {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  
+  .content .right ,
+  .content .right {
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #f0f1f8;
+    border-radius: 8px;
+    padding: 0 10px;
+    resize: none;
+  }
+  
+  .right .message-box {
+    min-height: 110px;
+  }
+  
+  .content .right .input-box textarea {
+    padding-top: 6px;
+  }
+  
+  .right .button {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  
+  .right .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #c79cc9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .right .button input[type="button"]:hover {
+    background-color: #4914db;
+  }
+
+  .input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #c79cc9;
+    color: #000000;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+form button:hover{
+    background-color: darkviolet;
+}
+
+
+.input-group span{
+position: absolute;
+bottom: 12px;
+right: 17px;
+font-size: 14px;
+color: red;
+}
+
+#submit-error{
+    color: red;
+}
+
+
+.input-group span i{
+    color: seagreen;
+}
+  
+  @media (max-width: 950px) {
+    .Container-Contact {
+      width: 100%;
+      padding: 30px 35px 40px 35px;
+    }
+  
+    .Container-Contact .content .right {
+      width: 75%;
+      margin-left: 55px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Container-Contact {
+      margin: 40px 0;
+      height: 100%;
+    }
+  
+    .Container-Contact .content {
+      flex-direction: column-reverse;
+    }
+  
+    .Container-Contact .content .left {
+      width: 100%;
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .Container-Contact.content .left::before {
+      display: none;
+    }
+  
+    .Container-Contact .content .right {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+.input-box span{
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
+
+
 /* Footer */
 .footer {
     grid-area: footer;
