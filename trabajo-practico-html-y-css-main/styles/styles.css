@@ -532,6 +532,7 @@ img {
 }
 
 form button {
+    font-size: 15px;
     background: #c79cc9;
     color: #000000;
     border-radius: 4px;
@@ -545,6 +546,7 @@ form button {
 
 form button:hover {
     background-color: darkviolet;
+    transform: scale(1.1);
 }
 
 
