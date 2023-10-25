@@ -386,7 +386,7 @@ img {
     width: 100%;
     background-color: #fff;
     border-radius: 6px;
-    padding: 20px 60px 30px 40px;
+    padding: 30px 60px 30px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -431,10 +431,11 @@ img {
 
 .container-contact .left .details i:hover {
     color: darkviolet;
+    transform: scale(1.1);
 }
 
 .container-contact .left .details .topic {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -450,7 +451,8 @@ img {
 }
 
 .content .right .topic-text {
-    font-size: 23px;
+    margin: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: #c79cc9;
 }
@@ -487,21 +489,6 @@ img {
     margin-top: 12px;
 }
 
-.right .button input[type="button"] {
-    color: #fff;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background-color: #c79cc9;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.right .button input[type="button"]:hover {
-    background-color: #4914db;
-}
 
 .input-group {
     width: 100%;
@@ -513,6 +500,7 @@ img {
 
 .input-group label {
     flex-basis: 28%;
+    font-size: 15px;
 }
 
 .input-group input,
