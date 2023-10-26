@@ -88,6 +88,7 @@ body {
     position: absolute;
     z-index: 1;
     width: 90%;
+    top: 35%;
     margin: auto;
     display: flex;
     flex-direction: column;
