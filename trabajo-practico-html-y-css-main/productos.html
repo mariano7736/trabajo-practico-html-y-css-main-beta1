@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mariano</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/trabajo-practico-html-y-css-main/styles.css">
+    <script src="./script/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="header">
+            <div class="navbar">
+                <div class="icono">
+                    <a href="#"><img src="logo.jpg" class="logo"></a>
+                </div>
+                <div class="menu" id="items_menu">
+                    <a href="/trabajo-practico-html-y-css-main/Index.html">INICIO</a>
+                    <a href="/trabajo-practico-html-y-css-main/productos.html">PRODUCTOS</a>
+                    <a href="#">ACERCA DE MI</a>
+                    <a href="#">CONTACTO</a>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main">
+            
+            <div id="container-products" class="container"></div>
+
+        </div>
+    
+        <div class="footer">
+            <div class="contenedor-footer">
+                <div class="columna">
+                    <a href="#"><img src="logo.jpg" class="logo"></a>
+                </div>
+                <div class="columna">
+                    <menu>
+                        <h2>Cakes Diamond</h2>
+                        <ol>
+                            <p>About Us</p>
+                        </ol>
+                        <ol>
+                            <p>Contact</p>
+                        </ol>
+                        <ol>
+                            <span class='social-links'>
+                                <a>
+                                    <img src="./instagram.png" class="social" title='Instagram' alt='Instagram' />                       
+                                </a>
+                                <a>
+                                    <img src="./facebook.png" class="social"  title='Facebook' alt='Facebook' />                       
+                                </a>
+            
+                            </span>
+                        </ol>
+    
+                    </menu>
+
+                    <!-- texto animado -->
+                    <main>
+                        <a href="#" class="logotipo" id="logotipo">
+                            <div class="texto-animado" id="logo">Carlos Arturo</div>
+                            <p class="subtitulo">Desarrollador Web</p>
+                        </a>
+                    </main>
+                    
+                </div>
+    
+            </div>
+            <div class="autor">
+                    <small>© - 2023 All rights reserved</small>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        _toggle.onclick = () =>{
+            items_menu.classList.toggle("open"),
+            _toggle.classList.toggle("close")
+        }
+    </script>
+</body>
+
+</html>
