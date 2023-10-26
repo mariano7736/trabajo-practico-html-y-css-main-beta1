@@ -51,7 +51,7 @@ body {
     margin: 20px;
 }
 
-.navbar a:hover {
+.navbar .menu a:hover {
     background-color: #ddd;
     color: black;
 }
