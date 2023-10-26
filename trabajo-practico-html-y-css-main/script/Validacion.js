@@ -58,7 +58,7 @@ function validateEmail() {
     }
 
 
-    if (!email.match(/[A-Za-z]+@[a-z]+\.[a-z]+/)) {
+    if (!email.match(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/)) {
         emailError.innerHTML = 'Email invalido';
         return false;
     }
@@ -98,8 +98,3 @@ function validateForm() {
 
     }
 }
-
-/[A-Za-z]+@[a-z]+\.[a-z]+/
-
-
-// /^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/

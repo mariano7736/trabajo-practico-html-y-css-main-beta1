@@ -2,11 +2,13 @@
 <html>
 
 <head>
-    <title>Mariano</title>
+    <title>Diamond Cakes</title>
     <!-- agregamos fonts -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="Icon" href="./img/iconos/cakesdiamond (2).ico">
     <script src="./script/script.js" defer></script>
@@ -14,50 +16,75 @@
 </head>
 
 <body>
-    <header>
-        <div class="contenedor">
+<header>
+    <div class="contenedor">
 
-            <div class="header">
-                <div class="navbar">
-                    <div class="icono">
-                        <a href="Index.html"><img src="./img/iconos/logo.jpg" class="logo"></a>
-                    </div>
-                    <div class="menu" id="items_menu">
-                        <a href="#">INICIO</a>
-                        <a href="./rutas/productos.html">PRODUCTOS</a>
-                        <a href="./rutas/acerca-de-mi.html">ACERCA DE MI</a>
-                        <a href="./rutas/contacto.html">CONTACTO</a>
-                    </div>
-                    <div class="nav_toggle" id="_toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <div class="header">
+            <div class="navbar">
+                <div class="icono">
+                    <a href="Index.html"><img src="./img/iconos/logo.jpg" class="logo"></a>
+                </div>
+                <div class="menu" id="items_menu">
+                    <a href="#">INICIO</a>
+                    <a href="./rutas/acerca-de-mi.html">SOBRE NOSOTROS</a>
+                    <a href="./rutas/productos.html">PRODUCTOS</a>
+                    <a href="./rutas/contacto.html">CONTACTO</a>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
-    
+        </div>
 
-    </header>
 
-    <main>
-        <div class="main">
-            <div class="banner">
-                <div class="slider-frame">
-                    <ul>
-                        <li><img src="./img/slider/slider1.jpg" class="slider-img" alt=""></li>
-                        <li><img src="./img/slider/slider2.jpg" class="slider-img" alt=""></li>
-                        <li><img src="./img/slider/slider3.jpg" class="slider-img" alt=""></li>
-                        <li><img src="./img/slider/slider4.jpg" class="slider-img" alt=""></li>
-                        <li><img src="./img/slider/slider5.jpg" class="slider-img" alt=""></li>
-                        <li><img src="./img/slider/slider6.jpg" class="slider-img" alt=""></li>
-                    </ul>
+</header>
+
+<main>
+    <div class="main">
+        <div class="banner">
+
+            <div id="contenedor2">
+                <div id="caja1">
+                    <h1 id="temperatura-valor"></h1>
+                    <h1 id="temperatura-descripcion"></h1>
                 </div>
-                 
+                <div id="caja2">
+                    <h2 id="ubicacion"></h2>
+                </div>
+                <div id="caja3">
+                    <h3>Veloc. del Viento</h3>
+                    <h1 id="viento-velocidad"></h1>
+                </div>
+            </div>
+
+            <section class="layout">
+                <div><a href="#" class="logotipo" id="logotipo">
+                    <div class="texto-animado" id="logo">Bienvenidos a Mi Mundo</div>
+                </a></div>
+            </section>
+
+
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="./img/slider/slider1.jpg" class="slider-img" alt=""></li>
+                    <li><img src="./img/slider/slider2.jpg" class="slider-img" alt=""></li>
+                    <li><img src="./img/slider/slider3.jpg" class="slider-img" alt=""></li>
+                    <li><img src="./img/slider/slider4.jpg" class="slider-img" alt=""></li>
+                    <li><img src="./img/slider/slider5.jpg" class="slider-img" alt=""></li>
+                    <li><img src="./img/slider/slider6.jpg" class="slider-img" alt=""></li>
+                </ul>
             </div>
 
         </div>
 
-    </main>
+    </div>
+
+
+</main>
+
+<footer>
     <div class="footer">
         <div class="contenedor-footer">
             <div class="columna">
@@ -73,37 +100,43 @@
                         <p>Contact</p>
                     </ol>
                     <ol>
-                        <span class='social-links'>
+                            <span class='social-links'>
                                 <a href="https://www.instagram.com/" title="Instagram" target="_blank">
                                     <img src="./img/iconos/instagram.png" alt="">
                                 </a>
                                 <a href="https://www.facebook.com/" title="Facebook">
                                     <img src="./img/iconos/facebook.png" alt="">
-                                </a>            
-                        </span>
+                                </a>
+                            </span>
                     </ol>
 
                 </menu>
             </div>
 
         </div>
-        <div class="autor">
-                <small>© - 2023 All rights reserved</small>
-        </div>
-    </div>
+</footer>
 
-    <script>
+<div class="autor">
+    <small>© - 2023 All rights reserved</small>
+</div>
+</div>
 
-        _toggle.onclick = () =>{
-            items_menu.classList.toggle("open"),
-            _toggle.classList.toggle("close")
-        }
-    </script>
+<script src="./script/app2.js"></script>
+<script>
+
+  _toggle.onclick = () => {
+    items_menu.classList.toggle("open"),
+      _toggle.classList.toggle("close")
+  }
 
 
-    </footer>
+</script>
+<script src="./script/app.js"></script>
 
-   
+
+</footer>
+
+
 </body>
 
 </html>
